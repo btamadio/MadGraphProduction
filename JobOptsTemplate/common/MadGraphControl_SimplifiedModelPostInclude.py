@@ -1,5 +1,5 @@
 # This comes after all Simplified Model setup files
-from MadGraphControl.MadGraphUtils import SUSY_SM_Generation
+from MadGraphUtilsBWcutoff import SUSY_SM_Generation
 
 # Set maximum number of events if the event multiplier has been modified
 if evt_multiplier>0:
