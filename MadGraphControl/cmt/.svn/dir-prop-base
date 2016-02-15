@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 60
+cleanup.*sh
+setup.*sh
+install.*history
+version.cmt
+Makefile
+
+END

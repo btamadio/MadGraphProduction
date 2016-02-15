@@ -1,0 +1,751 @@
+2016.02.12  Zach Marshall <ZLMarshall@lbl.gov>
+	* Adding down-type squarks for matching parameters
+	* Tagging: MadGraphControl-00-05-30
+
+2016.02.12  Zach Marshall <ZLMarshall@lbl.gov>
+	* Bugfix to SUSY setup when getting a new run card, for new default
+	run card interface
+	* Tagging: MadGraphControl-00-05-29
+
+2016.02.02  Zach Marshall <ZLMarshall@lbl.gov>
+	* Patches to Grid Pack running obo Daniel Rauch
+	* Tagging: MadGraphControl-00-05-28
+
+2016.01.28  Zach Marshall <ZLMarshall@lbl.gov>
+	* Fixing requirements file
+	* Tagging: MadGraphControl-00-05-27
+
+2016.01.22  Josh McFayden <mcfayden@cern.ch>
+	* Fixes for gridpack running, fix for NLO cvmfs fastjet issue
+	* Tagging: MadGraphControl-00-05-26
+
+2015.12.10  Zach Marshall <ZLMarshall@lbl.gov>
+ 	* Adding an explicit option to save process dir when running arrange
+	output - if not set, the directory will be removed
+	* Using that option for simplified models instead of doing the remove
+	there
+	* Tagging: MadGraphControl-00-05-25
+
+2015.08.11  Josh McFayden <mcfayden@cern.ch>
+	* Updating generate_from_gridpack for NLO
+	* Tagging: MadGraphControl-00-05-24
+
+
+2015.08.10  Josh McFayden <mcfayden@cern.ch>
+	* Updating arrange_output to use is_NLO_run
+	* Fixing run_name for NLO generate_from_gridpack
+
+2015.08.10  Josh McFayden <mcfayden@cern.ch>
+	* Adding is_NLO_run function and adding real=QCD case
+	* Tagging: MadGraphControl-00-05-23
+
+2015.08.10  Zach Marshall <ZLMarshall@lbl.gov>
+	* Removing unnecessary config code
+	* Tagging: MadGraphControl-00-05-22
+
+2015.08.10  Zach Marshall <ZLMarshall@lbl.gov>
+	* Missed an except block.  Doh
+	* Tagging: MadGraphControl-00-05-21
+
+2015.08.08  Zach Marshall <ZLMarshall@lbl.gov>
+	* Adding option for modifying QNUMBERS in an almost nice way
+	* Tagging: MadGraphControl-00-05-20
+
+2015.08.08  Zach Marshall <ZLMarshall@lbl.gov>
+	* Overkill protection of the get default run card method, first to look
+	for run_card_default in case its there, and also to go back to the MADPATH
+	area in the case that we are running config-only mode
+	* Tagging: MadGraphControl-00-05-19
+
+2015.08.07  Zach Marshall <ZLMarshall@lbl.gov>
+	* Fixes for the case when thedir=None, thanks to Mike Flowerdew
+	* Tagging: MadGraphControl-00-05-18
+
+2015.08.02  Josh McFayden <mcfayden@cern.ch>
+	* Changing default xqcut=0
+	* Adding cluster_temp_path argument to generate()
+	* Tagging: MadGraphControl-00-05-17
+	
+2015.07.27  Zach Marshall <ZLMarshall@lbl.gov>
+	* Adding stau configuration option to get variations
+	* Tagging: MadGraphControl-00-05-16
+ 
+2015.07.09  Zach Marshall <ZLMarshall@lbl.gov>
+	* -f is not mandatory in an output command
+	* Tagging: MadGraphControl-00-05-15
+
+2015.07.09  Josh McFayden <mcfayden@cern.ch>
+	* Changing get_default_runcard function work with MG5_aMCv2_3_0+
+
+2015.06.15  Zach Marshall <ZLMarshall@lbl.gov>
+	* Allowing decays in SUSY_SM_Generation and adding a catch for allowing an
+	import model statement in the process definition
+	* Tagging: MadGraphControl-00-05-14
+
+2015.06.09  Zach Marshall <ZLMarshall@lbl.gov>
+	* Revising add_lifetimes function - seems to be working!
+	* Tagging: MadGraphControl-00-05-13
+
+2015.06.08  Zach Marshall <ZLMarshall@lbl.gov>
+	* Adding first attempt at add_lifetimes function
+
+2015-06.03  Zach Marshall <ZLMarshall@lbl.gov>
+	* More param_card options
+	* Tagging: MadGraphControl-00-05-12
+
+2015-06.03  Zach Marshall <ZLMarshall@lbl.gov>
+	* Adding proc_card option to generate_from_gridpack
+	* Tagging: MadGraphControl-00-05-11
+
+2015.05.18  Josh McFayden <mcfayden@cern.ch>
+	* Fix for LHAPDF in NLO mode
+	* Tagging: MadGraphControl-00-05-10
+	
+2015.05.18  Zach Marshall <ZLMarshall@lbl.gov>
+	* Checking events.lhe before trying to put it there
+	* Tagging: MadGraphControl-00-05-09
+
+2015.05.18  Josh McFayden <mcfayden@cern.ch>
+	* Fix for LHAPDF zero cross section error in LO running mode.
+	* Tagging: MadGraphControl-00-05-08
+	
+2015.05.17  Zach Marshall <ZLMarshall@lbl.gov>
+	* Whole bunch of changes to the param building method for future-proofing
+	* Thanks to Will Buttinger!!
+	* Better handling of output directory
+
+2015.05.14  Josh McFayden <mcfayden@cern.ch>
+	* Fix for LHAPDF zero cross section error in LO running mode.
+
+2015.05.06  Zach Marshall <ZLMarshall@lbl.gov>
+	* Adding first draft of top up algorithm
+	* Tagging: MadGraphControl-00-05-07
+
+2015.05.01  Josh McFayden <mcfayden@cern.ch>
+	* Fixes for LHAPDF that was causing Py8 issues
+	* Tagging:MadGraphControl-00-05-06
+
+2015.04.29  Josh McFayden <mcfayden@cern.ch>
+	* Fixes for LHAPDF that was causing Py8 issues
+
+2015.04.28  Zach Marshall <ZLMarshall@lbl.gov>
+	* Adding possibility to use MadSpin to the SM generate functions
+	* Tagging:MadGraphControl-00-05-05
+
+2015.04.23  Josh McFayden <mcfayden@cern.ch>
+	* Updating NLO running to use run_name and adding check for MadSpin output folder
+
+2015.03.24  Josh McFayden <mcfayden@cern.ch>
+	* Fixing multicore with int cast of ATHENA_PROC_NUMBER
+
+2015.03.24  Zach Marshall <ZLMarshall@lbl.gov>
+	* Adding anti-particle-specific definitions for SUSY particles
+	* Tagging: MadGraphControl-00-05-04
+
+2015.03.22  Takashi Yamanaka <takashi.yamanaka@cern.ch>
+	* Fixing drjj cut in run_card
+	* Adding pdlabel and lhaid arguments to SUSY_StrongSM_Generation and SUSY_SM_Generation
+
+2015.03.18  Zach Marshall <ZLMarshall@lbl.gov>
+	* Adding BSM block treatment for DiHiggs UFO model param card treatment
+	* Tagging: MadGraphControl-00-05-03
+
+2015.03.09  Zach Marshall <ZLMarshall@lbl.gov>
+	* Adding helpful_definitions() for helpful multi-particle definitions,
+	particularly useful for running SUSY simplified models
+	* Adding SUSY_SM_Generation as the new standard generation method for
+	simplified models in release 19.  Takes a process, unlike the old one that
+	tried to generate the process on the fly.
+	* Tagging: MadGraphControl-00-05-02
+
+2015.03.09  Josh McFayden <mcfayden@cern.ch>
+	* Added external lhapdf-config fix
+	* Tagging: MadGraphControl-00-05-01
+
+2015.03.05  Josh McFayden <mcfayden@cern.ch>
+	* Major changes to gridpack mode running for rel19
+	* Improving logic in build_run_card
+	* Adding print_cards function
+	* Making output directory discovery more strict
+	* Tagging: MadGraphControl-00-05-00
+
+
+2015.02.17  Zach Marshall <ZLMarshall@lbl.gov>
+	* arrange_output: Making sure that all open file handles are closed
+	* Tagging: MadGraphControl-00-04-01
+
+2015.02.11  Zach Marshall <ZLMarshall@lbl.gov>
+	* Major changes to generator setup in MadGraphUtils
+	* Bugfix to new_process functionality that takes a string
+	* Removing skip_events option from arrange_output (didn't work anyway)
+	* Adding outputTXTFile functionality via parsing of runargs.generate.py
+	* Removing get_decays function - should not be used anyway
+	* Adding strong_process_dict helper function to get processes card based on
+	generation type and number of jets
+	* Adding get_variations helper function to get xcut and scales based on
+	masses and systematics requested
+	* Significantly shortening SUSY_StrongSM_Generation input parameters,
+	adding runArgs to automatically figure out some parameters
+	* Removing SUSY_StrongSM_SG_Generation function because
+	SUSY_StrongSM_Generation now has an "MSSMCalc" option to run the
+	calculator instead of getting the param card the old way
+	* Removing SUSY_StrongSM_SG2NC_Generation - was a pure duplicate
+	* Tagging: MadGraphControl-00-04-00
+
+2015.02.10  Takashi Yamanaka <takashi.yamanaka@cern.ch>
+	* Adding getnewruncard option to SUSY_StrongSM_Generation()
+
+2015.02.08  Zach Marshall <ZLMarshall@lbl.gov>
+	* Returning the run card location from the get default run card function
+
+2015.01.27  Zach Marshall <ZLMarshall@lbl.gov>
+	* Adding function to get a default run card
+	* Tagging: MadGraphControl-00-03-04
+
+2015.01.27  Zach Marshall <ZLMarshall@lbl.gov>
+	* Adding option to new_process to send the entire process card instead of
+	a file name (no need to write the file in your JO)
+	* Adding options to get the run card and param card in generate() (no need
+	to do the get locally
+	* Tagging: MadGraphControl-00-03-03
+
+2015.01.15  Josh McFayden <mcfayden@cern.ch>
+	* Updates Adding whitespace fix, LHE version option and adding skip_events warning
+	* Tagging: MadGraphControl-00-03-02
+
+2015.01.04  Zach Marshall <ZLMarshall@lbl.gov>
+	* Adding a feature for checking output directory specification
+
+2014.12.05  Zach Marshall <ZLMarshall@lbl.gov>
+	* Patching requirements file
+	* Tagging: MadGraphControl-00-03-01
+
+2014.11.06  Josh McFayden <mcfayden@cern.ch>
+	* Updates Major changes to add NLO functionality
+	* Tagging: MadGraphControl-00-03-00
+
+2014.11.04  Josh McFayden <mcfayden@cern.ch>
+	* Updates to fix LHAPDF for v2.1.1+ and add MadSpin
+	* Tagging: MadGraphControl-00-02-08
+	M       python/MadGraphUtils.py
+	A       share/lhapdf-config
+	M       cmt/requirements
+
+2014.10.30  Zach Marshall <ZLMarshall@lbl.gov>
+	* Updates to aMC and runtime errors thanks to Carsten Burgard
+	* Tagging: MadGraphControl-00-02-07
+
+2014.10.18  Josh McFayden <mcfayden@cern.ch>
+	* Updates to add new N1N1 grid obo Geert-Jan Besjes
+	* Tagging: MadGraphControl-00-02-06
+
+2014.09.11  Zach Marshall <ZLMarshall@lbl.gov>
+	* Updates to grid pack running for SG setups obo Geert-Jan Besjes
+	* Tagging: MadGraphControl-00-02-05
+
+2014.09.01  Zach Marshall <ZLMarshall@lbl.gov>
+	* Adding nice little "extras" feature to run card building fn
+	* Tagging: MadGraphControl-00-02-04
+
+2014.06.06  Zach Marshall <ZLMarshall@lbl.gov>
+	* Adding C1N2 process obo Steve Muanza
+	* Tagging: MadGraphControl-00-02-03
+
+2014.06.03  Zach Marshall <ZLMarshall@lbl.gov>
+	* Adding catches so that config only will work for prod guys
+	 patch obo W. Ehrenfeld
+	* Tagging: MadGraphControl-00-02-02
+
+2014.03.09  Takashi Yamanaka <Takashi.Yamanaka@cern.ch>
+	* Fixing typo for stop mixed decay
+	* Tagging: MadGraphControl-00-02-01
+
+2014.03.04  Zach Marshall <ZLMarshall@lbl.gov>
+	* Testing the removal of process counters
+	* Tagging: MadGraphControl-00-02-00
+
+2014.02.27  Zach Marshall <ZLMarshall@lbl.gov>
+	* Updating for N2N3 script
+	* Tagging: MadGraphControl-00-01-04
+
+2014.02.13  Zach Marshall <zach.marshall@cern.ch>
+	* Reviving makeSLHA files script
+	* Tagging: MadGraphControl-00-01-03
+
+2013.12.24  Zach Marshall <zach.marshall@cern.ch>
+	* Loosening generation limits
+	* Tagging: MadGraphControl-00-01-02
+
+2013.10.14  Takashi Yamanaka <Takashi.Yamanaka@cern.ch>
+	* Adding gridpack mode to SUSY_StrongSM_Generation
+	* Tagging MadGraphControl-00-01-01
+	M       python/MadGraphUtils.py
+
+2013.09.05  Zach Marshall <zach.marshall@cern.ch>
+	* Abandoning SetupMadGraphEventsForSM, moving to susycontrol
+	* Tagging: MadGraphControl-00-01-00
+
+2013.09.01  Zach Marshall <zach.marshall@cern.ch>
+	* Adding Monotop param card
+	* Tagging: MadGraphControl-00-00-73
+
+2013.08.27  Zach Marshall <zach.marshall@cern.ch>
+	* Fixing typo obo Z. Grout
+	* Tagging: MadGraphControl-00-00-72
+
+2013.08.11  Zach Marshall <zach.marshall@cern.ch>
+	* Adding N2N3 grid extension obo Z. Grout
+	* Tagging: MadGraphControl-00-00-71
+
+2013.08.07  Zach Marshall <zach.marshall@cern.ch>
+	* Tagging: MadGraphControl-00-00-70
+
+2013.08.01  Takashi Yamanaka <Takashi.Yamanaka@cern.ch>
+	* Adding run_card for triboson
+	A         share/run_card.triboson.dat
+
+2013.07.18  Takashi Yamanaka <Takashi.Yamanaka@cern.ch>
+	* Fixing typo (mlog -> mglog)
+	M       python/MadGraphUtils.py
+
+2013.06.28  Zach Marshall <zach.marshall@cern.ch>
+	* Attempting a fix to the weird merging problem
+	* python/SetupMadGraphEventsForSM.py: Adding stau decay modifications 
+	 obo Z. Grout
+	* Tagging: MadGraphControl-00-00-69
+
+2013.06.27 Marie-Helene Genest <genest@lpsc.in2p3.fr>
+	M       python/MadGraphUtils.py
+	A       share/param_card.SM.SSphot.direct.dat
+	A       share/run_card.SMphot.dat
+	* Adding SSphot process for compressed squark grid with photon (pta>80 GeV)
+	* Tagging: MadGraphControl-00-00-68
+
+2013.06.13  Zach Marshall <zach.marshall@cern.ch>
+	* python/MadGraphUtils.py: Adding configuration for athenaMP
+	* Tagging: MadGraphControl-00-00-67
+
+2013.05.29  Takashi Yamanaka <Takashi.Yamanaka@cern.ch>
+	* Adding decays argument to SUSY_StrongSM_Generation()
+	M       python/MadGraphUtils.py
+
+2013.05.16  Zach Marshall <zach.marshall@cern.ch>
+	* Adding MET filter to some sbottom grids
+	* Tagging: MadGraphControl-00-00-65
+
+2013.05.14  Zach Marshall <zach.marshall@cern.ch>
+	* Bugfix to multi-lepton filter
+	* Tagging: MadGraphControl-00-00-64
+
+2013.05.14  Zach Marshall <zach.marshall@cern.ch>
+	* Nudging around N2N3 grid file structure
+	* Tagging: MadGraphControl-00-00-63
+
+2013.05.13  Zach Marshall <zach.marshall@cern.ch>
+	* Changes for the N2N3 grid obo Z Grout
+	 - Adding multilepton filter
+	 - Adding new grids with many leptons
+	 - Adding slepton and stau param cards
+	* Tagging: MadGraphControl-00-00-62
+
+2013.04.26  Takashi Yamanaka <Takashi.Yamanaka@cern.ch>
+	* Adding stop 3-body and 4-body decay
+	* Tagging: MadGraphControl-00-00-61
+	A         share/param_card.SM.TT.directBWN.dat	
+	A         share/param_card.SM.TT.direct4body.dat
+	
+2013.04.19  Zach Marshall <zach.marshall@cern.ch>
+	* Adding gridpack functionality obo J. McFayden
+	* Tagging: MadGraphControl-00-00-60
+
+--> Changes by A. Dafinca, tagged MGC-00-00-59
+
+2013.01.28  Zach Marshall <zach.marshall@cern.ch>
+	* Switches for alpsfact and pythia rescaling
+	* Tagging: MadGraphControl-00-00-58
+
+2013.01.18  Zach Marshall <zach.marshall@cern.ch>
+	* python/MadGraphUtils.py: Adding switch for changing
+	 alpsfact obo R. Bruneliere
+	* Tagging: MadGraphControl-00-00-57
+
+2012.12.24  Zach Marshall <zach.marshall@cern.ch>
+	* share/run_card.bH.dat share/param_card.bH.dat: add
+	 for H>bb production obo E. Strauss
+	* Tagging as MadGraphControl-00-00-56
+
+2012.12.06  Zach Marshall <zach.marshall@cern.ch>
+	* New grid spacing for bb grid
+	* Tagging as MadGraphControl-00-00-55
+
+2012.12.03  Zach Marshall <zach.marshall@cern.ch>
+	* New helper functions obo R. Bruneliere
+	* Tagging as MadGraphControl-00-00-54
+
+2012.12.03  Zach Marshall <zach.marshall@cern.ch>
+	* Updating mass points for bb grid
+	* Tagging as MadGraphControl-00-00-53
+
+2012.11.27  Zach Marshall <zach.marshall@cern.ch>
+	* Adding run numbers for bb gg grid
+	* Tagging as MadGraphControl-00-00-52
+
+2012.11.19 Takashi Yamanaka <Takashi.Yamanaka@cern.ch>
+	* Adding new decay modes for stop samples
+	M       python/MadGraphUtils.py
+	A       share/param_card.SM.TT.onestepTT.offshellZ.dat
+	A       share/param_card.SM.TT.mixedBT.offshellW.dat
+	A       share/param_card.SM.TT.mixedTT.Z.dat
+	A       share/param_card.SM.TT.mixedBT2.Z.dat
+	A       share/param_card.SM.TT.mixedBT2.offshellZ.dat
+	A       share/param_card.SM.TT.mixedTT.offshellZ.dat
+	A       share/param_card.SM.TT.onestepTT.H.dat
+	A       share/param_card.SM.TT.onestepTT.Z.dat
+	A       share/param_card.SM.TT.mixedBT.W.dat
+	A       share/param_card.SM.TT.mixedBT2.H.dat
+	A       share/param_card.SM.TT.mixedTT.H.dat
+
+2012.11.17  Zach Marshall <zach.marshall@cern.ch>
+	* Mods to N2 N3 run numbers
+	* Tagging as MadGraphControl-00-00-51
+
+2012.11.12  Zach Marshall <zach.marshall@cern.ch>
+	* Typo in N2 N3 setup
+	* Tagging as MadGraphControl-00-00-50
+
+2012.11.07 Zach Marshall <zach.marshall@cern.ch>
+	* Fixing typo
+	* Tagging as MadGraphControl-00-00-49
+
+2012.11.07 Zach Marshall <zach.marshall@cern.ch>
+	* Updating run numbers for N2 N3 grid
+	* Updating GammaJet and MultiJet JO in prep for 
+	 migration to job options tarball in MC12
+	* Tagging as MadGraphControl-00-00-48
+
+2012.11.06 Marie-Helene Genest <genest@lpsc.in2p3.fr>
+	* Tagging as MadGraphControl-00-00-47
+
+2012.11.05 Marie-Helene Genest <genest@lpsc.in2p3.fr>
+	* Extension of the one-step grids to mgluino=1.5 TeV
+
+2012.10.23 Takashi Yamanaka <Takashi.Yamanaka@cern.ch>
+	* Tagging MadGraphControl-00-00-46
+	
+2012.10.22 Marie-Helene Genest <genest@lpsc.in2p3.fr>
+	M       python/SetupMadGraphEventsForSM.py
+	M       share/param_card.SM.GG.twostepCN_slepton.dat
+	M       share/param_card.SM.SS.twostepCN_slepton.dat
+	M       share/MC12.SMwithMG_P6.py
+	* New two-step grids for MC12  
+
+2012.10.22 Takashi Yamanaka <Takashi.Yamanaka@cern.ch>
+	* Modified SetupMadGraphEventsForSM.py for stop samples
+	M       python/SetupMadGraphEventsForSM.py
+	
+2012.10.09  Zach Marshall <zach.marshall@cern.ch>
+	* Fixing up N2N3 production
+
+2012.10.05  Zach Marshall <zach.marshall@cern.ch>
+	* Adding draft of N2N3 production obo M. Hamer
+
+2012.10.02 Takashi Yamanaka <Takashi.Yamanaka@cern.ch>
+	* Tagging MadGraphControl-00-00-45
+	
+2012.09.16 Takashi Yamanaka <Takashi.Yamanaka@cern.ch>
+	* Increasing evt_multipler for SM.TT.onestep samples
+	M       python/SetupMadGraphEventsForSM.py
+	
+2012.09.07 Takashi Yamanaka <Takashi.Yamanaka@cern.ch>
+	* Adding param_card.SM.TT.....dat
+	* Modifying proc_card_mg5.SM.dat
+	* Modifying SetupMadGraphEventsForSM.py,MadGraphUtils.py for new stop samples
+	* Tagging MadGraphControl-00-00-43
+	M       python/SetupMadGraphEventsForSM.py
+	M       python/MadGraphUtils.py
+	M	share/param_card.SM.TT.onestepBB.dat
+	A       share/param_card.SM.TT.onestepBB.offshell.dat
+	M       share/proc_card_mg5.SM.dat
+	A       share/param_card.SM.TT.mixedBT.dat
+	A       share/param_card.SM.TT.mixedBT.offshell.dat
+
+2012.09.06  Zach Marshall <zach.marshall@cern.ch>
+	* Adding Wprime param card obo J. Donini
+	* Tagging MadGraphControl-00-00-42
+
+2012.08.03  Takashi Yamanaka <Takashi.Yamanaka@cern.ch>
+	* Added TT.onestepBB proces dataset
+	* Modified parameters for TT.onestepBB process
+	* Removed xqcut comment line in run_card
+	M       python/SetupMadGraphEventsForSM.py
+	M       share/param_card.SM.TT.onestepBB.dat
+	M       share/run_card.SM.dat
+
+2012.08.03  Zach Marshall <zach.marshall@cern.ch>
+	* Modifications for MadGraph 1.4.8
+	* Tagging: MadGraphControl-00-00-40
+
+2012.07.04  Takashi Yamanaka <Takashi.Yamanaka@cern.ch>
+        * Added MC12 stop benchmark samples
+	M       python/SetupMadGraphEventsForSM.py
+	A       share/param_card.SM.TT.onestepBB.dat
+	A       share/param_card.SM.TT.directTT.dat
+	* Tagging: MadGraphControl-00-00-39
+
+2012.06.26  Zach Marshall <zach.marshall@cern.ch>
+	* More hacking for LHAPDF and edge cases
+	* Tagging: MadGraphControl-00-00-38
+
+2012.06.19  Zach Marshall <zach.marshall@cern.ch>
+	* Adding a mod for LHAPDF
+
+2012.06.07  Zach Marshall <zach.marshall@cern.ch>
+	* Tagging: MadGraphControl-00-00-36
+
+2012.06.07 Marie-Helene Genest <genest@lpsc.in2p3.fr>
+	* switch off tauola for 1+ lepton grids
+
+2012.06.07  Zach Marshall <zach.marshall@cern.ch>
+	* Pushing evgenConfig around in the pre include
+
+2012.06.01  Zach Marshall <zach.marshall@cern.ch>
+	* Tagging: MadGraphControl-00-00-35
+
+2012.05.31 Robin van der Leeuw <rvdleeuw@nikhef.nl>
+	M python/SetupMadGraphEventsForSM.py
+	* Added the MC12 direct decay grids with fixed runnumbers
+	* Changed the outputDS from $rn.madgraph_XXX -> $rn.MadGraphPythia_AUET2BCTEQ6L1_XXX
+	M share/makeJobOptionsForSM.py
+	* Including MC12.SMwithMG_P6.py instead of MC12.SMwithMG.py 	
+
+2012.05.30 Marie-Helene Genest <genest@lpsc.in2p3.fr>
+	M       python/SetupMadGraphEventsForSM.py
+	* fixed the run numbers for one and two-step grids
+
+2012.05.25  Teng Jian Khoo <teng.jian.khoo@cern.ch>
+	M python/SetupMadGraphEventsForSM.py
+	M python/MadGraphUtils.py
+	* Set up squark-gluino grid with intermediate neutralino/chargino (SG2NC)
+	* shutils --> shutil
+	M share/MC12.SMwithMG.py
+	* Make use of the common Pythia+Madgraph fragment
+	* PHOTOS sometimes doesn't work. Could add a flag for PHOTOS/TAUOLA?
+	M share/makeProdSpreadSheetForSM.py
+	* Make the (dummy) evgeninputfiles file as well
+
+2012.05.21  Zach Marshall <zach.marshall@cern.ch>
+	* Adding a switch for removing directories at the end of the job
+	 Defaults to true
+
+2012.04.02  Zach Marshall <zach.marshall@cern.ch>
+	* Moving to logging
+
+2012-03-23  Andy Buckley  <andy.buckley@cern.ch>
+	* Renaming output MadGraph LHE file to the new generic name 'events.lhe'
+
+2012.03.23  Larry Lee <lawrence.lee.jr@cern.ch>
+	* Adding jobOptions and param card for RPV Gluino sample
+	* Tagging: MadGraphControl-00-00-34
+
+2012.03.22  Teng Jian Khoo <teng.jian.khoo@cern.ch>
+	* Backdated: update jobO for SUSY Simplified Models to manage MC12 with Pythia8
+	
+2012.03.21  Zach Marshall <zach.marshall@cern.ch>
+	* Changing names to madgraph_ obo Claire G.
+
+2012.03.20  Moritz Backes <Moritz.Backes@cern.ch>
+	* Adding filter for grid 8
+	* Tagging: MadGraphControl-00-00-33
+
+2012.03.21  Zach Marshall <zach.marshall@cern.ch>
+	* Fixing bug in setup
+	* Tagging: MadGraphControl-00-00-32
+
+2012.03.21  Zach Marshall <zach.marshall@cern.ch>
+	* Adding ECM pickup from transform
+	* Tagging: MadGraphControl-00-00-31
+
+2012.03.20  Moritz Backes <Moritz.Backes@cern.ch>
+	* Fixing grids 8 and 9. Decays done in pythia (grid 8/9), filter
+	for grid 9
+	* Tagging: MadGraphControl-00-00-30
+
+2012.03.16  Zach Marshall <zach.marshall@cern.ch>
+	* SLHA file making: fixing two stupid bugs
+
+2012.03.12 Marie-Helene Genest <genest@lpsc.in2p3.fr>
+	* two-step grid GG with slepton via CN: decay is done in pythia + filters
+	* Tagging: MadGraphControl-00-00-29
+
+2012.03.12  Zach Marshall <zach.marshall@cern.ch>
+	* Adding first shot at MC12 job options with Pythia8
+	* Updating run numbers in GammaJet and MultiJet job options
+	* Adding catch for additional samples that need more events
+	* Tagging: MadGraphControl-00-00-28
+
+2012.03.11  Marie-Helene Genest <genest@lpsc.in2p3.fr>
+	* Two-step grids: GG bug fixed
+	* Tagging: MadGraphControl-00-00-27
+
+2012.03.08  Marie-Helene Genest <genest@lpsc.in2p3.fr>
+	* Two-step grids (GG, SS each via CC or CN) with intermediate sleptons are defined
+	* Tagging: MadGraphControl-00-00-26
+
+2012.02.28  Zach Marshall <zach.marshall@cern.ch>
+	* Few bug fixes obo Larry Lee
+	* Tagging: MadGraphControl-00-00-25
+
+2012.02.27  Zach Marshall <zach.marshall@cern.ch>
+	* Increasing the number of MadGraph events for the systematic samples that need it:  <http://savannah.cern.ch/support/?126502>
+	* Inserting the possiblity to use EventMultiplier to increase the number of MadGraph events on the fly
+	* Tagging: MadGraphControl-00-00-24
+
+2012.02.20  Zach Marshall <zach.marshall@cern.ch>
+	* Fixing a bug and changing a setting in gamma-jet and multi-jet samples
+	* Tagging: MadGraphControl-00-00-23
+
+2012.02.07  Zach Marshall <zach.marshall@cern.ch>
+	* Bug fix to pythia tune names obo Alex Dafinca
+	* Tagging: MadGraphControl-00-00-22
+
+2012.02.06  Zach Marshall <zach.marshall@cern.ch>
+	* Bug fix to GG systematic sample names
+	* Tagging: MadGraphControl-00-00-21
+
+2012.02.03  Zach Marshall <zach.marshall@cern.ch>
+	* Adding options for truth ntuples to makeProdSheet scripts
+
+2012.02.02  Zach Marshall <zach.marshall@cern.ch>
+	* Adding systematic variation definitions for various grids:  <http://savannah.cern.ch/task/?25930>
+	* Tagging: MadGraphControl-00-00-20
+
+2012.01.20  Zach Marshall <zach.marshall@cern.ch>
+	* Adding script for getting SLHA files out
+	* Tagging: MadGraphControl-00-00-19
+
+2012.01.19  Zach Marshall <zach.marshall@cern.ch>
+	* Update to testable version of gamma-jet and multi-jet setups
+	* Tagging: MadGraphControl-00-00-18
+
+2012.01.13  Zach Marshall <zach.marshall@cern.ch>
+	* Adding functionality for evaluating systematic uncertainties
+	* Moving number of event configuration back into setup scripts, just in case
+	* Generalizing some functionality for gamma jet processes
+	* Adding some dummy run numbers for intermediate slepton decays (not defined yet)
+	* Bugfix to decay process for SG grids
+	* Tagging: MadGraphControl-00-00-17
+
+2012.01.05  Zach Marshall <zach.marshall@cern.ch>
+	* Adding DS numbers for 0-lepton SG grids 15-17:  <http://savannah.cern.ch/task/?25069>
+	* Small fixes to numbering scheme for SG grids
+	* Tagging: MadGraphControl-00-00-16
+
+2011.12.27  Zach Marshall <zach.marshall@cern.ch>
+	* Modifying job options scripts for bug fix and additional include
+	* Adding SG grid production spreadsheet setup
+	* Moving default to serial generation
+	* Tagging: MadGraphControl-00-00-15
+
+2011.12.19  Zach Marshall <zach.marshall@cern.ch>
+	* Update to prod spreadsheet script from Moritz for Grid 5
+
+2011.12.16  Zach Marshall <zach.marshall@cern.ch>
+	* Fixing a bug in SG grid specification
+
+2011.12.16  Zach Marshall <zach.marshall@cern.ch>
+	* Adding option for offshell decays if masses are within 100 GeV of one another
+	* Moving to 5000 events per job
+	* Fixing the move to 5000 events per job
+	* Bug fix to SG grid
+	* New script to dump production spreadsheets
+	* Tagging: MadGraphControl-00-00-14
+
+2011.12.15  Zach Marshall <zach.marshall@cern.ch>
+	* Moving to double the number of events in MadGraph
+	* Tagging: MadGraphControl-00-00-13
+
+2011.12.14  Zach Marshall <zach.marshall@cern.ch>
+	* Added run numbers for grids 4, 5, 6, 7, 10, and 11:  <http://savannah.cern.ch/task/?24916>
+	* Adding preliminary spacing for zero-lepton SG grids (three new grids)
+	* Tagging: MadGraphControl-00-00-12
+
+2011.12.14  Zach Marshall <zach.marshall@cern.ch>
+	* Bug fixes from TJ Khoo
+	* Implementation of SG grids parameter files and running MSSMCalc
+
+2011.12.14  Zach Marshall <zach.marshall@cern.ch>
+	* Putting in run numbers for official grids 1 and 2:  <http://savannah.cern.ch/task/?24888>
+	* Tagging: MadGraphControl-00-00-11
+
+2011.12.12  Zach Marshall <zach.marshall@cern.ch>
+	* One more try at getting charge conservation right in one-step decays
+	* And the gluino one-step decays
+
+2011.12.11  Zach Marshall <zach.marshall@cern.ch>
+	* New function for running QG grids
+	* Very preliminary version of QG grid definition
+
+2011.12.11  Zach Marshall <zach.marshall@cern.ch>
+	* Updating grid spacing for gluino-gluino and squark-squark production
+	 grids 1 and 2 obo T. Gillam
+	* Tagging: MadGraphControl-00-00-10
+
+2011.12.08  Zach Marshall <zach.marshall@cern.ch>
+	* Only creating process lists if they might be used (protects against some crashes)
+	* Changing the anti- on the quark in the SS one-step CN decay
+
+2011.12.08  Zach Marshall <zach.marshall@cern.ch>
+	* Fixing X-grid mass decoding, obo Moritz
+	* Tagging: MadGraphControl-00-00-09
+
+2011.12.06  Zach Marshall <zach.marshall@cern.ch>
+	* Moving default xqcut up (still gets set based on scale of heavy particles)
+	* Moving default ptj and ptb to zero for CKKW matching
+	* Fixing bug in Wlist vs Wdict (thanks Moritz)
+	* Tagging: MadGraphControl-00-00-08
+
+2011.12.04  Zach Marshall <zach.marshall@cern.ch>
+	* Adding possibility of direct sbottom / stop production
+	* Adding stop-> c LSP and sbottom -> b LSP param cards obo Mario Martinez
+	* Small bug fix to chargino-chargino decays
+	* Tagging: MadGraphControl-00-00-07
+
+2011.11.29  Zach Marshall <zach.marshall@cern.ch>
+	* Adding gluino > bbbar grid (twelve) obo Dan Silverstein
+	* Moving to one jet by default from MadGraph
+	* Tagging: MadGraphControl-00-00-06
+
+2011.11.15  Zach Marshall <zach.marshall@cern.ch
+	* Minor re-factoring of the control scripts
+	* Added python script for dumping job options files for prod sys
+	* Tagging:MadGraphControl-00-00-05
+
+2011.11.15  Zach Marshall <zach.marshall@cern.ch>
+	* Clean up of job options and addition of re-read for pythia
+	* Moving run card back to 3.5 TeV on 3.5 TeV ...
+	* Implementing event skipping
+	* Adding information to transfer back to job options (ds name)
+	* Changing number of MG jets for a couple of the grids
+	* Tagging: MadGraphControl-00-00-04
+
+2011.11.13  Zach Marshall <zach.marshall@cern.ch>
+	* First attempt at generation pre-include and job options
+	* Several more modifications and bug fixes
+	* Tagging: MadGraphControl-00-00-03
+
+2011.11.11  Zach Marshall <zach.marshall@cern.ch>
+	* Moving to friendlier error handling
+	* Forcing decays with quark flavors rather than using jets
+	* Tagging: MadGraphControl-00-00-02
+
+2011.11.10  Zach Marshall <zach.marshall@cern.ch>
+	* Fixing a number of little thins
+	* Tagging: MadGraphControl-00-00-01
+
+2011.11.10  Zach Marshall <zach.marshall@cern.ch>
+	* First import of MadGraphControl package!
+	* python/MadGraphUtils.py: A number of python utility functions for
+	 steering calls to MadGraph and for generating simplified model datasets
+	* share/*dat: A number of MadGraph configuration files useful when
+	 generating simplified model datasets
+	* Tagging: MadGraphControl-00-00-00
