@@ -1400,7 +1400,7 @@ output -f
         return [xqcut,'dummy']
 
     # Grab the run card and move it into place
-    extras = { 'ktdurham':xqcut , 'lhe_version':'2.0' , 'cut_decays':'F' , 'pdlabel':pdlabel , 'lhaid':lhaid , 'drjj':0.0, 'bwcutoff':'2' }
+    extras = { 'ktdurham':xqcut , 'lhe_version':'2.0' , 'cut_decays':'F' , 'pdlabel':pdlabel , 'lhaid':lhaid , 'drjj':0.4, 'bwcutoff':'2','auto_ptj_mjj':'F','ptheavy':20,'ptb':20,'etab':5,'drbb':0.4,'drbj':0.4,'drab':0.4,'drbl':0.4}
     build_run_card(run_card_old=get_default_runcard(thedir),run_card_new='run_card.dat',xqcut=0,
                    nevts=nevts,rand_seed=rand_seed,beamEnergy=beamEnergy, scalefact=scalefact, alpsfact=alpsfact,extras=extras)
 
