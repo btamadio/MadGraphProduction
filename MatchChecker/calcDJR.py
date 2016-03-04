@@ -64,12 +64,12 @@ class DJRcalculator:
                     ktij = self.calcKT(self.p4List[i])
                 else:
                     ktij = self.calcKT(self.p4List[i],self.p4List[j])
-                print i,j,ktij
+                #print i,j,ktij
                 if ktij < ktMin:
                     iMin = i
                     jMin = j
                     ktMin = ktij
-        print 'Minimum found: ',iMin,jMin,ktMin
+        #print 'Minimum found: ',iMin,jMin,ktMin
         return(iMin,jMin,ktMin)
     def deleteAndCombine(self,i,j):
         p4a = self.p4List.pop(j)
