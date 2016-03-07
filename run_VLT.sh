@@ -1,7 +1,7 @@
 #!/bin/bash
 run=$1
 seed=$2
-mass=$2
+mass=$3
 mkdir -p production
 rm -rf production/VLT_${run}_${seed}_${mass}
 mkdir production/VLT_${run}_${seed}_${mass}

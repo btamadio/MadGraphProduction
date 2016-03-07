@@ -19,9 +19,7 @@ if hasattr(runArgs,'ecmEnergy'):
     beamEnergy = runArgs.ecmEnergy / 2.
 else:
     beamEnergy = 6500.
-#mass=int(re.findall(r'\d+',re.findall(r'\d+LH',runArgs.jobConfig[0])[0])[0])
-mass=1100
-print mass
+mass=int(re.findall(r'\d+',re.findall(r'\d+LH',runArgs.jobConfig[0])[0])[0])
 # allow usage of all PDF sets
 os.environ['LHAPATH']=os.environ["LHAPDF_DATA_PATH"]=(os.environ['LHAPATH'].split(':')[0])+":/cvmfs/sft.cern.ch/lcg/external/lhapdfsets/current/"
 # especially 263400 = NNPDF30_lo_as_0130_nf_4
