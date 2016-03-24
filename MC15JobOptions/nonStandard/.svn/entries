@@ -1,0 +1,49 @@
+10
+
+dir
+732261
+svn+ssh://svn.cern.ch/reps/atlasoff/Generators/MC15JobOptions/trunk/nonStandard
+svn+ssh://svn.cern.ch/reps/atlasoff
+
+
+
+2016-03-17T13:56:26.936476Z
+730721
+hpirumov
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+4525493e-7705-40b1-a816-d608a930855b
+
+Sherpa
+dir
+
+Herwig
+dir
+
+Herwigpp
+dir
+
+Pythia8
+dir
+
+Pythia8B
+dir
+
+Photos
+dir
+
+Pythia
+dir
+

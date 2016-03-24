@@ -1,0 +1,22 @@
+# in comments it is listed which generators got updated in a given release
+AtlasProduction, 19.2.5.3
+MCProd,          19.2.5.3.1
+
+#comments
+#AtlasProduction, 19.2.4.5 to be used for the Pythia 8.2
+#AtlasProduction, 19.2.4.11 to be used for Pythia8.21, Powheg
+#AtlasProduction, 19.2.4.12 to be used for Herwigpp and Sherpa
+#AtlasProduction, 19.2.4.15 VBFMjjIntervalFilter new functionalities added
+#AtlasProduction, 19.2.4.16 EvgenJobTransform fixed to allow for correct .TXT output handling
+#AtlasProduction, 19.2.4.17 to be used for MG 2.2 (reduced size of produced directory)
+#AtlasProduction, 19.2.5.2 to be used for MG 2.3, Powheg (fixed grid-pack issue)
+
+#MCProd,          19.2.4.10.2 to be used for MG2.3 validation
+#MCProd,          19.2.4.12.1 to be used for Sherpa 2.2 validation
+#MCProd,          19.2.4.16.3 MG2.3.2 p.1 - ATLMCPROD-2493
+#MCProd,          19.2.4.16.5 Pythia8.2.12 validation
+#MCProd,          19.2.4.16.6 validation Photos3.61
+#MCProd,          19.2.5.1.1  validation Pythia8.15
+#MCProd,          19.2.5.3.1  Pythia8.212, copilertime switch set to LHAPDF6
+
+

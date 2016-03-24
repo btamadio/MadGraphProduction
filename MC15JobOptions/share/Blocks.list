@@ -1,0 +1,19 @@
+DSID300xxx		B-Physics
+DSID301xxx-340xxx	Exotics
+DSID341xxx-360xxx	Higgs
+DSID361xxx-369xxx	Standard Model
+DSID370xxx-404xxx	SUSY
+DSID405xxx		Old SM from MC11 - do not use!
+DSID406xxx-409xxx	SUSY
+DSID410xxx-414xxx	Top
+DSID415xxx-419xxx	Upgrade (includes plenty of space for future)
+DSID420xxx		Heavy Ion
+DSID421xxx		PMG
+
+DSID422xxx		Tracking
+DSID423xxx		E/gamma
+DSID424xxx		Muon
+DSID425xxx		Tau
+DSID426xxx		Jet/ETMiss
+DSID427xxx		Flavour tagging
+DSID428xxx-429xxx	Validation, commissioning and miscellaneous
