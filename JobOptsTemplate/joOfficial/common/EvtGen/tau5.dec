@@ -1,0 +1,19 @@
+# Close all EvtGen tau decays
+# to allow user open only wanted decay(s)
+
+Decay tau-
+Enddecay
+Decay tau+
+Enddecay
+
+
+Decay tau-
+# 5 Charged Particles
+#
+0.843749812 nu_tau  pi-     pi-     pi-     pi+     pi+     PHSP; #[Reconstructed PDG2011]
+0.156250188 nu_tau  pi-     pi-     pi-     pi+     pi+     pi0     PHSP; #[Reconstructed PDG2011]
+Enddecay
+#
+CDecay tau+
+#
+End

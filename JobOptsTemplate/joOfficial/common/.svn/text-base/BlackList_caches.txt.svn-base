@@ -1,0 +1,12 @@
+AtlasProduction, 19.2.3.8, MadGraph 
+AtlasProduction, 19.2.3.9, Powheg
+AtlasProduction, 19.2.3.10, Powheg
+MCProd,          19.2.3.10.2, EvtGen
+MCProd,          19.2.3.10.3, EvtGen
+AtlasProduction, 19.2.4.1, EvtGen
+MCProd,          19.2.4.3.1, MadGraph
+AtlasProduction, 19.2.4.4, MadGraph
+AtlasProduction, 19.2.4.5, MadGraph
+AtlasProduction, 19.2.5.1, Herwigpp
+AtlasProduction, 19.2.5.2, Herwigpp
+AtlasProduction, 19.2.5.3, Herwigpp

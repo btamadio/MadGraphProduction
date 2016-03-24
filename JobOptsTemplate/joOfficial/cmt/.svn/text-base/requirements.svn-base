@@ -1,0 +1,13 @@
+package MC15JobOptions
+
+author James Monk
+
+use AtlasPolicy AtlasPolicy-*
+
+public
+macro MC15JobOptions_pedantic_level "warning"
+apply_pattern declare_runtime_extras extras="../gencontrol/*.dat  ../exocontrol/*.dat  ../susycontrol/*.dat  *.DEC "
+
+apply_pattern generic_declare_for_link files="../nonStandard/Pythia8/*.py ../nonStandard/Photos/*.py ../nonStandard/Herwigpp/*.py ../nonStandard/Pythia/*.py ../nonStandard/Sherpa/*.py" kind=jobOptions prefix=jobOptions/MC15JobOptions/nonStandard name=nonStandard
+
+apply_pattern declare_joboptions files="../common/*.py ../common/MadGraph/*.py ../common/EvtGen/*.py ../common/EvtGen/*.pdt ../common/Herwigpp/*.py ../common/ParticleGun/*.py ../common/Pythia8/*.py ../common/Pythia/*.py ../common/Sherpa/*.py ../common/Filters/*.py ../common/Epos/*.py ../common/*.txt"

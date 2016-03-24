@@ -1,0 +1,13 @@
+# Close all EvtGen tau decays
+# to allow user open only wanted decay(s)
+        
+Decay K_S0
+Enddecay
+
+
+
+Decay K_S0
+1.00 pi-     pi+                                            PHSP; #[Reconstructed PDG2011]
+Enddecay
+#
+End

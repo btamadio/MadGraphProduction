@@ -1,0 +1,25 @@
+# Close all EvtGen tau decays
+# to allow user open only wanted decay(s)
+        
+Decay tau-
+Enddecay
+Decay tau+
+Enddecay
+
+
+Decay tau-
+0.6000000 pi-     pi0     nu_tau                          TAUHADNU -0.108 0.775 0.149 1.364 0.400; #[Reconstructed PDG2011]
+0.1500000 pi0     pi0     pi-     nu_tau                  TAUHADNU -0.108 0.775 0.149 1.364 0.400 1.23 0.4; #[Reconstructed PDG2011]
+0.2000000 pi-     pi-     pi+     nu_tau                  TAUHADNU -0.108 0.775 0.149 1.364 0.400 1.23 0.4; #[Reconstructed PDG2011]
+0.0500000 nu_tau  pi-     pi+     pi-     pi0             PYTHIA    41; #[Reconstructed PDG2011]
+Enddecay
+
+Decay tau+
+0.6000000 pi+     pi0     nu_tau                          TAUHADNU -0.108 0.775 0.149 1.364 0.400; #[Reconstructed PDG2011]
+0.1500000 pi0     pi0     pi+     nu_tau                  TAUHADNU -0.108 0.775 0.149 1.364 0.400 1.23 0.4; #[Reconstructed PDG2011]
+0.2000000 pi+     pi+     pi-     nu_tau                  TAUHADNU -0.108 0.775 0.149 1.364 0.400 1.23 0.4; #[Reconstructed PDG2011]
+0.0500000 nu_tau  pi+     pi-     pi+     pi0             PYTHIA    41; #[Reconstructed PDG2011]
+
+Enddecay
+#
+End
